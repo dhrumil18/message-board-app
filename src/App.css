@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+/* MessageBoard.css */
+
+/* Style the main container */
+.message-board {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+.message-board h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the sorting dropdown */
+.message-board label {
+  font-weight: bold;
+}
+
+.message-board select {
+  padding: 4px;
+  margin-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the message input form */
+.message-form {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.message-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.message-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the message list */
+.message-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 51vh;
+  min-height: 51vh;
+  overflow-y: auto;
+}
+
+.message-list li {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+.message-list li:first-child {
+  border-top: none;
+}
+
+.message-list button {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.message-list button:hover {
+  background-color: #ff0000;
+}
+
+.message-item-parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.message-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+.sort-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-timestamp {
+  color: gray;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.message-source {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.04rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination buttons */
+.page-button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-button:hover {
+  background-color: #0056b3;
+}
+
+/* Active page button */
+.active-page {
+  background-color: #0056b3;
+}
